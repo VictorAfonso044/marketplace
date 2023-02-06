@@ -69,16 +69,6 @@ public class CartServiceTest {
     @InjectMocks
     private CartServiceImpl cartService;
 
-    @BeforeEach
-    void setUp() {
-        // Mockito.doCallRealMethod().when(clientParser).mapFromDTO(ArgumentMatchers.any());
-        // Mockito.doCallRealMethod().when(clientParser).mapToDTO(ArgumentMatchers.any());
-        // Mockito.doCallRealMethod().when(productParser).mapFromDTO(ArgumentMatchers.any());
-        // Mockito.doCallRealMethod().when(productParser).mapToDTO(ArgumentMatchers.any());
-        // Mockito.doCallRealMethod().when(cartItemParser).mapFromDTO(ArgumentMatchers.any());
-        // Mockito.doCallRealMethod().when(cartItemParser).mapToDTO(ArgumentMatchers.any());
-    }
-
     @Test
     void whenValidClientInformedThenItCreateCart() {
         ClientDTO client = Creators.createValidClient();
